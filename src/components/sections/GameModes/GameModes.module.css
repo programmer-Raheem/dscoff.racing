@@ -11,13 +11,13 @@
   position: relative;
   width: 100%;
   height: 380px;
-  background-color: #FFCC2A;
+  background-color: #0D1B21;
   overflow: hidden;
 }
 
 .gameModesSlider {
-  width: 110%;
-  margin-left: -5%;
+  width: 100%;
+  margin-left: 0;
   height: 100%;
 }
 
@@ -41,6 +41,27 @@
   overflow: hidden;
   cursor: pointer;
   background-color: #FFCC2A;
+}
+
+.gameModeItem::before,
+.gameModeItem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #FFCC2A;
+  z-index: 3;
+}
+
+.gameModeItem::before {
+  left: -20px;
+  transform: skewX(38deg);
+}
+
+.gameModeItem::after {
+  right: -20px;
+  transform: skewX(38deg);
 }
 
 .gameModeItem :global(img) {
@@ -143,6 +164,11 @@
   .gameModeItem {
     background-color: transparent;
     width: 100%;
+  }
+
+  .gameModeItem::before,
+  .gameModeItem::after {
+    display: none;
   }
 
   .gameModeItem :global(img) {
