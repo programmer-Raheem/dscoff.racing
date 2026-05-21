@@ -1,0 +1,180 @@
+.vehicleModesSection {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  margin: 0;
+  overflow: hidden;
+  background: url('/images/vehicle background.svg') no-repeat center center;
+  background-size: cover;
+  border-bottom: 40px solid #0D1B21;
+}
+
+.vehicleModesWrapper {
+  position: relative;
+  width: 100%;
+  height: 344px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Desktop row layout */
+.vehiclesRow {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 35px;
+  position: relative;
+}
+
+.vehicleItemWrapper {
+  width: 476.34px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.vehicleItemWrapper:not(:first-child) {
+  margin-left: -215px;
+}
+
+.vehicleItemWrapper:nth-child(1) { z-index: 1; }
+.vehicleItemWrapper:nth-child(2) { z-index: 2; }
+.vehicleItemWrapper:nth-child(3) { z-index: 3; }
+.vehicleItemWrapper:nth-child(4) { z-index: 4; }
+
+.vehicleModeItem {
+  position: relative;
+  width: 476.34px;
+  height: 237.66px;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.vehicleModeItem :global(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.vehicleModeItem:hover :global(img) {
+  transform: scale(1.05);
+}
+
+.vehicleModeTextWrapper {
+  margin-top: 15px;
+  text-align: center;
+  z-index: 5;
+}
+
+.vehicleModeText {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32.4px;
+  letter-spacing: 0px;
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 240px;
+}
+
+.textYellow {
+  color: #FFCC2A;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  .vehicleModesSection {
+    height: auto;
+    min-height: 380px;
+    padding-bottom: 30px;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .vehicleModesWrapper {
+    height: 280px;
+    overflow: hidden;
+    padding: 12px 0 16px;
+    display: block;
+  }
+
+  .vehiclesRow {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vehicleSlide {
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+    transition: z-index 0.3s;
+  }
+
+  .vehicleSlide:hover {
+    z-index: 10 !important;
+  }
+
+  .vehicleItemWrapper {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+
+  .vehicleModeItem {
+    width: 100%;
+    height: 180px;
+    overflow: visible;
+    position: relative;
+  }
+
+  .vehicleModeItem :global(img) {
+    width: 100%;
+    height: 100%;
+    transform: none;
+    object-fit: contain;
+    display: block;
+  }
+
+  .vehicleModeTextWrapper {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .vehicleModeText {
+    font-size: 12px;
+    margin-left: 0;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vehicleModeItem {
+    height: 180px;
+  }
+
+  .vehicleSlide {
+    padding: 0;
+  }
+}

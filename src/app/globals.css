@@ -1,0 +1,106 @@
+/* ==========================================================================
+   DSCOFF CUSTOM PROJECT STYLESHEET
+   ========================================================================== */
+
+:root {
+  --primary-color: #0E4FA3;
+  --secondary-color: #549EFD;
+  --bg-color: #FFFFFF;
+  --text-color: #8284A0;
+}
+
+/* Local Fonts Definition */
+@font-face {
+  font-family: 'Race Sport';
+  src: url('/web-font/RaceSportRegular.woff2') format('woff2'),
+       url('/web-font/RaceSportRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Resets & Base Elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset baseline font families */
+h1, h2, h3, h4, h5, h6, p, span, a, div, li, ul, em, strong {
+  font-family: var(--font-inter), sans-serif;
+}
+
+body {
+  line-height: 1;
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  font-family: var(--font-inter), sans-serif;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+/* Helper layout wrapper */
+.wrapper-div {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Global Animations */
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes winPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Base Responsive Padding for mobile navbar offset */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    padding-top: 0;
+  }
+}

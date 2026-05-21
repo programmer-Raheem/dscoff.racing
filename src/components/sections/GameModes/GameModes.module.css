@@ -1,0 +1,160 @@
+.gameModesSection {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background-color: #0D1B21;
+}
+
+.gameModesSliderWrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-color: #FFCC2A;
+  overflow: hidden;
+}
+
+.gameModesSlider {
+  width: 110%;
+  margin-left: -5%;
+  height: 100%;
+}
+
+.gameModeSlide {
+  height: 380px;
+  padding: 0;
+  outline: none;
+  position: relative;
+  transition: z-index 0.3s;
+}
+
+.gameModeSlide:hover {
+  z-index: 10 !important;
+}
+
+.gameModeItem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: skewX(-38deg);
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #FFCC2A;
+}
+
+.gameModeItem :global(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: skewX(38deg) scale(1.8);
+  transition: transform 0.4s ease;
+}
+
+.gameModeItem:hover :global(img) {
+  transform: skewX(38deg) scale(1.9);
+}
+
+.gameModeOverlay {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  right: -100px;
+  bottom: -100px;
+  background-color: rgba(13, 27, 33, 0.85);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gameModeItem:hover .gameModeOverlay {
+  opacity: 1;
+}
+
+.gameModeTextWrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  transform: skewX(38deg);
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gameModeItem:hover .gameModeTextWrapper {
+  opacity: 1;
+  bottom: 40px;
+}
+
+.gameModeText {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  gap: 8px;
+}
+
+.textYellow {
+  color: #FFCC2A;
+  position: relative;
+}
+
+.textYellow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #FFCC2A;
+}
+
+.textWhite {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .gameModesSection {
+    padding-bottom: 40px;
+  }
+
+  .gameModesSliderWrapper {
+    height: 180px;
+    background-color: #0D1B21;
+  }
+
+  .gameModesSlider {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gameModeSlide {
+    height: 180px;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .gameModeItem {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .gameModeItem :global(img) {
+    transform: skewX(38deg) scale(1.55);
+  }
+
+  .gameModeItem:hover .gameModeOverlay {
+    opacity: 1;
+  }
+
+  .gameModeItem:hover .gameModeTextWrapper {
+    opacity: 1;
+    bottom: 40px;
+  }
+}

@@ -1,0 +1,160 @@
+.roadmapSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 570px;
+  padding-bottom: 40px;
+  margin: 0;
+  overflow: hidden;
+  background-color: #0D1B21;
+  background-image: url('/images/roadmap.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.roadmapWrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px;
+}
+
+.roadmapStoryTitle {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #D2D3D4;
+  margin: 0 0 50px 0;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+
+.roadmapTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.roadmapTimeline::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 350px;
+  width: 1px;
+  border-left: 1px dashed #FFCC2A;
+  z-index: 0;
+}
+
+.timelineDate {
+  width: 350px;
+  text-align: right;
+  padding-right: 60px;
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-style: italic;
+  flex-shrink: 0;
+}
+
+.dateHighlight {
+  color: #FFCC2A;
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+}
+
+.timelineDot {
+  width: 8px;
+  height: 8px;
+  background-color: #FFCC2A;
+  border-radius: 50%;
+  position: absolute;
+  left: 350px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px rgba(255, 204, 42, 0.4), 0 0 0 8px rgba(255, 204, 42, 0.15);
+  z-index: 2;
+}
+
+.timelineDesc {
+  width: auto;
+  padding-left: 60px;
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #D2D3D4;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 768px) {
+  .roadmapSection {
+    min-height: 0;
+    padding-bottom: 10px;
+    background-image: url('https://res.cloudinary.com/dgstbxgwt/image/upload/v1737402636/roadmap-bg-mobile_zntm6v.svg');
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .roadmapWrapper {
+    padding: 30px 20px 10px;
+  }
+
+  .roadmapStoryTitle {
+    font-size: 18px;
+    padding-left: 0;
+    margin: 0 0 35px 0;
+    text-align: left;
+  }
+
+  .roadmapTimeline {
+    gap: 40px;
+    padding-left: 10px;
+  }
+
+  .roadmapTimeline::before {
+    left: 20px;
+  }
+
+  .timelineItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timelineDate {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 45px;
+    font-size: 17px;
+  }
+
+  .timelineDot {
+    left: 10px;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 0 3px rgba(255, 204, 42, 0.4), 0 0 0 6px rgba(255, 204, 42, 0.15);
+  }
+
+  .timelineDesc {
+    width: 100%;
+    padding-left: 45px;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.heading {
+  font-family: 'Race Sport', 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #D2D3D4;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.highlight {
+  font-family: 'Race Sport', 'Orbitron', sans-serif;
+  font-weight: 900;
+  color: #FFCC2A;
+}
+
+/* Alignment rules */
+.left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive typography styling */
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

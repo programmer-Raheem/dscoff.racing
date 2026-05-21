@@ -1,0 +1,95 @@
+.giveawaysPromoSection {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: #0D1B21;
+}
+
+.giveawaysPromoContent {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+}
+
+.giveawaysPromoBg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.telegramBtnLink {
+  position: absolute;
+  width: 32%;
+  max-width: 462px;
+  height: auto;
+  aspect-ratio: 462 / 95;
+  top: 70.2%;
+  left: 57.6%;
+  z-index: 3;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s ease;
+}
+
+.telegramBtnImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.telegramBtnLink:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 10px 20px rgba(255, 204, 42, 0.4));
+}
+
+@media screen and (max-width: 768px) {
+  .giveawaysPromoSection {
+    height: auto;
+  }
+
+  .giveawaysPromoContent {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 480px;
+    aspect-ratio: 390 / 543;
+    overflow: hidden;
+    background-color: #0D1B21;
+    background-image: url('https://res.cloudinary.com/dgstbxgwt/image/upload/v1737401271/gamebanner_wru1bg.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .giveawaysPromoBg {
+    display: none;
+  }
+
+  .telegramBtnLink {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: 56px;
+    width: 88%;
+    max-width: 320px;
+    transform: translateX(-50%);
+    aspect-ratio: auto;
+  }
+
+  .telegramBtnLink:hover {
+    transform: translateX(-50%) scale(1.03);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .giveawaysPromoContent {
+    min-height: 400px;
+    background-size: 100% auto;
+  }
+
+  .telegramBtnImg {
+    margin-bottom: 50px;
+  }
+}

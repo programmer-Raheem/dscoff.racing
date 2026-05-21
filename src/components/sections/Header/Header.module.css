@@ -1,0 +1,174 @@
+.header {
+  height: 70px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0D1B21;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 999;
+}
+
+.headerNavigationWrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.brandLogo {
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+}
+
+.logoImg {
+  height: 32px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.navbarRightContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 615px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  z-index: 5;
+}
+
+.navbarYellowBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 615px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav {
+  position: relative;
+  z-index: 2;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-right: 160px;
+}
+
+.navItem a {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 32.4px;
+  color: #0D1B21 !important;
+  letter-spacing: 0;
+  text-shadow: none;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navItem a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 992px) {
+  .headerNavigationWrapper {
+    padding: 0 20px;
+  }
+
+  .navbarRightContainer {
+    width: 500px;
+    padding-right: 30px;
+  }
+
+  .navbarYellowBg {
+    width: 500px;
+  }
+
+  .navigation {
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 50px;
+    position: fixed;
+    background: #0D1B21;
+  }
+
+  .headerNavigationWrapper {
+    flex-direction: row;
+    height: 50px;
+    padding: 0 12px;
+    gap: 0;
+  }
+
+  .brandLogo {
+    z-index: 25;
+  }
+
+  .logoImg {
+    width: 85px;
+    height: 16.75px;
+    padding-left: 0;
+    object-fit: contain;
+    position: relative;
+    z-index: 25;
+  }
+
+  .navbarRightContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 76%;
+    min-width: 240px;
+    height: 50px;
+    padding-right: 12px;
+    justify-content: center;
+  }
+
+  .navbarYellowBg {
+    display: block;
+    width: 105%;
+    height: 50px;
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  .nav {
+    margin-left: 18px;
+  }
+
+  .navigation {
+    gap: 14px;
+    margin-right: 0;
+    margin-left: 16px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navItem a {
+    font-size: 10px;
+    line-height: 1;
+    color: #0D1B21 !important;
+  }
+}

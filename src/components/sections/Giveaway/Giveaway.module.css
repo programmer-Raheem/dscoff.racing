@@ -1,0 +1,201 @@
+.ribbonVideoSection {
+  position: relative;
+  width: 100%;
+  height: 865px;
+  margin: 0;
+  padding-bottom: 80px;
+  background-color: #0D1B21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-top: -20px;
+  z-index: 10;
+}
+
+.giveawayRibbonSection {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Yellow Ribbon */
+.ribbonYellow {
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 95px;
+  background-color: #FFCC2A;
+  transform: rotate(-5deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  pointer-events: auto;
+}
+
+.ribbonStaticTrack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ribbonStaticTrack span {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 26px;
+  color: #0D1B21;
+  display: inline-block;
+  animation: winPulse 2s infinite ease-in-out;
+}
+
+.ribbonStaticTrack span:nth-child(1) { animation-delay: 0s; }
+.ribbonStaticTrack span:nth-child(2) { animation-delay: -0.25s; }
+.ribbonStaticTrack span:nth-child(3) { animation-delay: -0.5s; }
+.ribbonStaticTrack span:nth-child(4) { animation-delay: -0.75s; }
+.ribbonStaticTrack span:nth-child(5) { animation-delay: -1.0s; }
+.ribbonStaticTrack span:nth-child(6) { animation-delay: -1.25s; }
+.ribbonStaticTrack span:nth-child(7) { animation-delay: -1.5s; }
+.ribbonStaticTrack span:nth-child(8) { animation-delay: -1.75s; }
+
+/* Dark Ribbon */
+.ribbonDark {
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 100px;
+  background-color: rgba(13, 27, 33, 0.65);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transform: rotate(5deg);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.ribbonSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.ribbonItem {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.ribbonItem:hover {
+  transform: scale(0.92);
+}
+
+.ribbonLogo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.ribbonText {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* Video Container */
+.videoContentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-bottom: 50px;
+  z-index: 20;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 85%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .ribbonVideoSection {
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .giveawayRibbonSection {
+    height: 110px;
+  }
+
+  .ribbonYellow {
+    height: 52px;
+  }
+
+  .ribbonStaticTrack span {
+    font-size: 14px;
+  }
+
+  .ribbonDark {
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .ribbonLogo {
+    height: 28px;
+  }
+
+  .ribbonText {
+    font-size: 14px;
+  }
+
+  .ribbonItem {
+    padding: 0 4px;
+  }
+
+  .videoContentContainer {
+    padding-bottom: 20px;
+  }
+
+  .videoWrapper {
+    width: 95%;
+  }
+}

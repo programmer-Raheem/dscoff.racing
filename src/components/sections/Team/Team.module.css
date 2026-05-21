@@ -1,0 +1,139 @@
+.teamSection {
+  position: relative;
+  width: 100%;
+  height: 615px;
+  margin: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: #0D1B21;
+}
+
+.teamSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: url('https://res.cloudinary.com/dgstbxgwt/image/upload/v1737401604/teams-bg_ywbe0p.svg') no-repeat top right;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.teamWrapper {
+  position: relative;
+  width: 100%;
+  height: 545px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.teamRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.teamMemberPhoto {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.teamMemberPhoto :global(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.teamMember:hover .teamMemberPhoto {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+.teamMemberInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.teamMemberName {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  color: #FFCC2A;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.teamMemberRole {
+  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 768px) {
+  .teamSection {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .teamWrapper {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .teamRow {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .teamMemberPhoto {
+    width: 200px;
+    height: 200px;
+  }
+
+  .teamMemberName {
+    font-size: 17px;
+  }
+
+  .teamMemberRole {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .teamMemberPhoto {
+    width: 160px;
+    height: 160px;
+  }
+
+  .teamRow {
+    gap: 35px;
+  }
+}
