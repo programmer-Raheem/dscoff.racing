@@ -192,33 +192,14 @@
   height: auto;
 }
 
-@media screen and (min-width: 1281px) {
-  .heroWelcome {
-    font-size: 64px;
-    word-break: break-word;
-  }
-
-  .heroSubtitle {
-    font-size: 36px;
-    line-height: 1.3;
-    word-break: break-word;
-  }
-
-  .heroLogoBox {
-    max-width: 480px;
-  }
-}
-
 @media screen and (max-width: 1280px) {
   .heroWelcome {
-    font-size: 52px;
-    word-break: break-word;
+    font-size: 42px;
   }
 
   .heroSubtitle {
     font-size: 32px;
     line-height: 1.3;
-    word-break: break-word;
   }
 
   .heroLogoBox {
