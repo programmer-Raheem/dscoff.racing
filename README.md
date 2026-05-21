@@ -1,4 +1,4 @@
-# <p align="center"><img src="https://dscoff.racing/assets/images/logo-hero.svg" onerror="this.src='./public/assets/images/logo-hero.svg'" alt="DSCOFF Racing Logo" width="380"></p>
+# <p align="center"><img src="https://dscoff.racing/assets/images/logo-hero.svg" onerror="this.src='./assets/images/logo-hero.svg'" alt="DSCOFF Racing Logo" width="380"></p>
 
 <p align="center">
   <strong>Where Adrenaline and Asphalt Meet</strong>
