@@ -11,13 +11,13 @@
   position: relative;
   width: 100%;
   height: 380px;
-  background-color: #FFCC2A;
+  background-color: #0D1B21;
   overflow: hidden;
 }
 
 .gameModesSlider {
   width: 110%;
-  margin-left: -5%;
+  margin-right: -10%;
   height: 100%;
 }
 
