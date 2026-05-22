@@ -1,7 +1,7 @@
 .ribbonVideoSection {
   position: relative;
   width: 100%;
-  height: 865px;
+  height: auto;
   margin: 0;
   padding-bottom: 80px;
   background-color: #0D1B21;
@@ -129,7 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  padding-top: 40px;
   padding-bottom: 50px;
   z-index: 20;
 }

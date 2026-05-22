@@ -98,14 +98,14 @@
 @media screen and (max-width: 768px) {
   .vehicleModesSection {
     height: auto;
-    min-height: 380px;
-    padding-bottom: 30px;
+    min-height: 200px;
+    padding-bottom: 20px;
     border-bottom: none;
     margin-bottom: 0;
   }
 
   .vehicleModesWrapper {
-    height: 280px;
+    height: 220px;
     overflow: hidden;
     padding: 12px 0 16px;
     display: block;
@@ -115,15 +115,22 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    height: 100%;
   }
 
   .vehicleSlide {
     padding: 0;
     box-sizing: border-box;
-    height: auto;
+    height: 100%;
     position: relative;
+    width: 50%;
     transition: z-index 0.3s;
   }
+
+  .vehicleSlide:nth-child(1) { z-index: 1; }
+  .vehicleSlide:nth-child(2) { z-index: 2; }
+  .vehicleSlide:nth-child(3) { z-index: 3; }
+  .vehicleSlide:nth-child(4) { z-index: 4; }
 
   .vehicleSlide:hover {
     z-index: 10 !important;
@@ -138,40 +145,58 @@
     flex-direction: column;
     align-items: center;
     margin-left: 0 !important;
+    height: 100%;
+    z-index: inherit;
   }
 
   .vehicleModeItem {
     width: 100%;
-    height: 180px;
+    height: 160px;
     overflow: visible;
     position: relative;
+    z-index: 1;
   }
 
   .vehicleModeItem :global(img) {
     width: 100%;
     height: 100%;
-    transform: none;
+    transform: scale(1.3);
     object-fit: contain;
     display: block;
   }
 
   .vehicleModeTextWrapper {
-    margin-top: 10px;
+    margin-top: 8px;
     width: 100%;
     text-align: center;
+    padding-left: 20px;
+    position: relative;
+    z-index: 10;
   }
 
   .vehicleModeText {
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 0;
-    justify-content: center;
+    justify-content: flex-start;
     white-space: nowrap;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .vehicleModesSection {
+    min-height: 180px;
+  }
+
+  .vehicleModesWrapper {
+    height: 200px;
+  }
+
   .vehicleModeItem {
-    height: 180px;
+    height: 140px;
+  }
+
+  .vehicleModeItem :global(img) {
+    transform: scale(1.2);
   }
 
   .vehicleSlide {

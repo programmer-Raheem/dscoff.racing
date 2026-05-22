@@ -26,6 +26,9 @@ export default function VehicleModes() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  // Duplicate vehicles array for smooth infinite loop on mobile
+  const mobileVehicles = isMobile ? [...vehicles, ...vehicles] : vehicles;
+
   return (
     <section className={styles.vehicleModesSection} id="vehicle-modes">
       <SectionTopBar subtitle="VEHICLE MODES" />
@@ -37,14 +40,14 @@ export default function VehicleModes() {
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             speed={800}
             loop={true}
-            slidesPerView={2.2}
+            slidesPerView={2}
             centeredSlides={true}
-            spaceBetween={-50}
+            spaceBetween={-80}
             allowTouchMove={true}
             className={styles.vehiclesRow}
           >
-            {vehicles.map((v) => (
-              <SwiperSlide key={v.id} className={styles.vehicleSlide}>
+            {mobileVehicles.map((v, index) => (
+              <SwiperSlide key={`${v.id}-${index}`} className={styles.vehicleSlide}>
                 <div className={styles.vehicleItemWrapper}>
                   <div className={styles.vehicleModeItem}>
                     <Image

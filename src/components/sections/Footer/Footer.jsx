@@ -15,8 +15,8 @@ export default function Footer() {
               <Image src={Images.logo} alt="DSCOFF RACING Logo" width={150} height={50} />
             </Link>
             <div className={styles.footerYellowLinks}>
-              <Link href="#" className={styles.footerLinkYellow}>DSCOFF WIKI</Link>
-              <Link href="#" className={styles.footerLinkYellow}>MARKETPLICE</Link>
+              <a href="https://dscoff-racing.gitbook.io/dscoff.racing" target="_blank" rel="noopener noreferrer" className={styles.footerLinkYellow}>DSCOFF WIKI</a>
+              <a href="https://dscoff-racing.gitbook.io/dscoff.racing" target="_blank" rel="noopener noreferrer" className={styles.footerLinkYellow}>MARKETPLICE</a>
             </div>
           </div>
 

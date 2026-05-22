@@ -26,7 +26,7 @@ export default function GameModes() {
           allowTouchMove={true}
           breakpoints={{
             0: {
-              slidesPerView: 1.2,
+              slidesPerView: 1.5,
               centeredSlides: true,
               spaceBetween: -20,
             },

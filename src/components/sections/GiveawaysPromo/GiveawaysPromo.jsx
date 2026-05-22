@@ -13,10 +13,11 @@ export default function GiveawaysPromo() {
         <Image
           src={Images.telegramBg}
           alt="DSCOFF Giveaways Promotion"
-          fill
+          width={1440}
+          height={600}
           className={styles.giveawaysPromoBg}
-          style={{ objectFit: "contain" }}
           sizes="100vw"
+          priority
         />
 
         <a
@@ -31,6 +32,7 @@ export default function GiveawaysPromo() {
             width={462}
             height={95}
             className={styles.telegramBtnImg}
+            style={{ width: "100%", height: "auto" }}
           />
         </a>
       </div>

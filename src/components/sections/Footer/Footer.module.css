@@ -127,21 +127,31 @@
 
 .socialIconLink {
   text-decoration: none;
-  display: inline-block;
-  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px; /* little box shape */
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.socialIconLink:hover {
+  background-color: #FFCC2A;
+  transform: translateY(-2px);
 }
 
 .socialIcon {
-  width: 26px;
-  height: 26px;
+  width: 26px !important;
+  height: 26px !important;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(0) invert(1); /* white icon initially */
+  transition: filter 0.3s ease;
 }
 
 .socialIconLink:hover .socialIcon {
-  filter: none;
-  transform: scale(1.15);
+  filter: brightness(0) invert(0); /* black icon on hover */
 }
 
 .storeButtons {
