@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Images } from "@/utils/images";
-import SectionTopBar from "@/components/ui/SectionTopBar";
+import SectionTopBar from "@/components/reusable/SectionTopBar";
 import styles from "./GiveawaysPromo.module.css";
 
 export default function GiveawaysPromo() {

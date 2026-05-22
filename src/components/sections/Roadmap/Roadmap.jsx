@@ -1,6 +1,6 @@
 import React from "react";
-import { roadmapTimeline } from "@/data/roadmap";
-import SectionTopBar from "@/components/ui/SectionTopBar";
+import { roadmapTimeline } from "@/constants/roadmap";
+import SectionTopBar from "@/components/reusable/SectionTopBar";
 import styles from "./Roadmap.module.css";
 
 export default function Roadmap() {

@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { Images } from "@/utils/images";
-import SectionTopBar from "@/components/ui/SectionTopBar";
+import SectionTopBar from "@/components/reusable/SectionTopBar";
 import styles from "./Giveaway.module.css";
 
 const ribbonItems = [

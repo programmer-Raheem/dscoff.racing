@@ -44,7 +44,7 @@ export default function Hero() {
               </div>
 
               <h3 className={styles.heroSubtitle}>
-                WHERE <span>ADRENALINE</span> AND <span>ASPHALT</span> MEET
+                Where <span>Adrenaline</span> and <span>Asphalt</span> Meet
               </h3>
 
               <p className={styles.heroDesc}>

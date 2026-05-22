@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { teamMembers } from "@/data/team";
-import SectionTopBar from "@/components/ui/SectionTopBar";
+import { teamMembers } from "@/constants/team";
+import SectionTopBar from "@/components/reusable/SectionTopBar";
 import styles from "./Team.module.css";
 
 export default function Team() {

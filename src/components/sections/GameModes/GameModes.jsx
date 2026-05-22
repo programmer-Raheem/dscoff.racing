@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { gameModes } from "@/data/gameModes";
-import SectionTopBar from "@/components/ui/SectionTopBar";
+import { gameModes } from "@/constants/gameModes";
+import SectionTopBar from "@/components/reusable/SectionTopBar";
 import styles from "./GameModes.module.css";
 
 export default function GameModes() {
