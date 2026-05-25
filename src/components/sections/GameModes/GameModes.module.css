@@ -109,7 +109,7 @@
   transform: skewX(38deg) translateY(16px);
   opacity: 0;
   transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1),
-              transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   pointer-events: none;
   z-index: 2;
   will-change: transform, opacity;
@@ -121,7 +121,7 @@
 }
 
 .gameModeText {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: 'Race Sport', sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 24px;

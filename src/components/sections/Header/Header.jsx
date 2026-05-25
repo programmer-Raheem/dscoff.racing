@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Images } from "@/utils/images";
+import { Images } from "@/assets/utils/images";
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -8,24 +7,24 @@ export default function Header() {
     <header className={styles.header} id="header">
       <div className={styles.headerNavigationWrapper}>
         <a href="#" className={styles.brandLogo}>
-          <Image
+          <img
             src={Images.logo}
             alt="DSCOFF RACING Logo"
             width={160}
             height={32}
             className={styles.logoImg}
-            priority
+            loading="eager"
           />
         </a>
 
         <div className={styles.navbarRightContainer}>
-          <Image
+          <img
             src={Images.halfNav}
             alt="Half Nav"
             width={615}
             height={70}
             className={styles.navbarYellowBg}
-            priority
+            loading="eager"
           />
 
           <nav className={styles.nav} id="nav-main">

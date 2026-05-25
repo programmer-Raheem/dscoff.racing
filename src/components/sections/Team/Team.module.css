@@ -4,6 +4,7 @@
   height: 615px;
   margin: 0;
   padding-bottom: 0;
+  margin-bottom: 0;
   overflow: hidden;
   background-color: #0D1B21;
 }
@@ -76,10 +77,9 @@
 }
 
 .teamMemberName {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 900;
-  font-style: italic;
-  font-size: 20px;
+  font-size: 24px;
   color: #FFCC2A;
   margin: 0;
   text-transform: uppercase;
@@ -87,10 +87,10 @@
 }
 
 .teamMemberRole {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 13px;
+  font-size: 16px;
   color: #FFFFFF;
   margin: 0;
   text-transform: uppercase;
@@ -101,6 +101,7 @@
   .teamSection {
     height: auto;
     padding-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .teamWrapper {
@@ -119,11 +120,11 @@
   }
 
   .teamMemberName {
-    font-size: 17px;
+    font-size: 24px;
   }
 
   .teamMemberRole {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 

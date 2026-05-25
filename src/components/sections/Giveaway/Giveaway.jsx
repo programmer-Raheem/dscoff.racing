@@ -1,12 +1,9 @@
-"use client";
-
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { Images } from "@/utils/images";
-import SectionTopBar from "@/components/reusable/SectionTopBar";
+import { Images } from "@/assets/utils/images";
+import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./Giveaway.module.css";
 
 const ribbonItems = [
@@ -59,12 +56,13 @@ export default function Giveaway() {
             {ribbonItems.map((item, index) => (
               <SwiperSlide key={index} className={styles.ribbonItem}>
                 {item.type === "logo" ? (
-                  <Image
+                  <img
                     src={Images.logo}
                     alt="DSCOFF Logo"
                     width={100}
                     height={42}
                     className={styles.ribbonLogo}
+                    loading="lazy"
                   />
                 ) : (
                   <span className={styles.ribbonText}>GIVAWAYS</span>

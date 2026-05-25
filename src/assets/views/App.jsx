@@ -8,17 +8,22 @@ import Team from "@/components/sections/Team/Team";
 import Roadmap from "@/components/sections/Roadmap/Roadmap";
 import Footer from "@/components/sections/Footer/Footer";
 
-export default function Home() {
+function App() {
   return (
-    <main>
-      <Header />
-      <Hero />
-      <Giveaway />
-      <GiveawaysPromo />
-      <VehicleModes />
-      <Team />
-      <Roadmap />
-      <Footer />
-    </main>
+    <div className="wrapper-div" id="wrapper">
+      <main>
+        <Header />
+        <Hero />
+        <Giveaway />
+        <GiveawaysPromo />
+        <GameModes />
+        <VehicleModes />
+        <Team />
+        <Roadmap />
+        <Footer />
+      </main>
+    </div>
   );
 }
+
+export default App;

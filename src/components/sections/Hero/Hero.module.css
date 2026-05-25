@@ -37,6 +37,21 @@
   pointer-events: none;
 }
 
+/* DECORATIVE IMAGE - RIGHT SIDE */
+.heroDecorativeImage {
+  position: absolute;
+  top: 60px;
+  right: 12%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.heroDecorativeImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* CONTAINER */
 .container {
   width: 100%;
@@ -114,15 +129,15 @@
 
 /* SUBHEADING - "Where Adrenaline and Asphalt Meet" */
 .heroSubtitle {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 900;
-  font-style: normal;
   font-size: 36px;
   line-height: 1.3;
   letter-spacing: 0%;
   text-transform: capitalize;
   color: #D2D3D4;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .heroSubtitle span {
@@ -136,19 +151,18 @@
 .heroDesc {
   font-family: var(--font-inter), sans-serif;
   font-weight: 400;
-  font-style: italic;
   font-size: 20px;
   line-height: 34px;
   color: #D2D3D4;
   margin-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   word-break: break-word;
   overflow-wrap: break-word;
   max-width: 100%;
+  font-style: italic;
 }
 
 .heroDesc em {
-  font-style: italic;
   font-weight: 400;
   color: #D2D3D4;
   font-size: 20px;
@@ -156,7 +170,6 @@
 
 .heroDesc span {
   font-family: var(--font-inter), sans-serif;
-  font-style: italic;
   font-weight: 900;
   color: #FFCC2A;
 }
@@ -166,7 +179,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   margin-bottom: 25px;
 }
 
@@ -182,8 +194,8 @@
 }
 
 .downloadBadgeLink img {
-  height: 52px;
-  width: auto;
+  height: 70px;
+  width: 235px;
 }
 
 /* AVAILABILITY TEXT */
@@ -211,7 +223,7 @@
 /* DOWN ARROW (ANIMATED) */
 .scrollArrowBox {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .scrollArrow {
@@ -232,13 +244,13 @@
   }
 
   .heroSubtitle {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.3;
     word-break: break-word;
   }
 
   .heroDesc {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
   }
 
@@ -254,13 +266,13 @@
   }
 
   .heroSubtitle {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 1.3;
     word-break: break-word;
   }
 
   .heroDesc {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.35;
   }
 
@@ -275,6 +287,12 @@
     min-height: calc(100vh - 50px);
     padding: 60px 16px 40px;
     margin-top: 0;
+  }
+
+  .heroDecorativeImage {
+    top: 0;
+    right: 12px;
+    max-width: 298px;
   }
 
   .heroDateLabelDesktop {
@@ -295,15 +313,20 @@
     max-width: 158px;
   }
 
+  .heroLogoBox {
+    margin-bottom: 20px;
+  }
+
   .heroSubtitle {
-    font-size: 16px;
+    font-size: clamp(14px, 4.5vw, 24px);
     line-height: 1.25;
     margin-top: 0;
     margin-bottom: 16px;
+    white-space: nowrap;
   }
 
   .heroDesc {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.35;
     margin-top: 0;
     margin-bottom: 22px;
@@ -311,7 +334,7 @@
 
   .heroDesc em,
   .heroDesc span {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .heroDownloadButtons {
@@ -324,7 +347,8 @@
   }
 
   .downloadBadgeLink img {
-    height: 44px;
+    height: 70px;
+    width: 235px;
   }
 
   .heroDateText {
@@ -343,10 +367,12 @@
 }
 
 @keyframes arrowBounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(8px);
   }

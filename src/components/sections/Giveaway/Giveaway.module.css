@@ -10,8 +10,7 @@
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
-  margin-top: -20px;
-  z-index: 10;
+  margin-top: -10px;  z-index: 30;
 }
 
 .giveawayRibbonSection {
@@ -23,8 +22,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
-  z-index: 10;
+  margin-top: -15px;
+  z-index: 50;
   pointer-events: none;
 }
 
@@ -129,8 +128,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 0;
+  margin-top: -15px;  padding-bottom: 0;
   z-index: 20;
 }
 
@@ -158,7 +157,7 @@
 @media screen and (max-width: 768px) {
   .ribbonVideoSection {
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-top: 0;
   }
 
@@ -192,7 +191,8 @@
   }
 
   .videoContentContainer {
-    padding-bottom: 20px;
+    margin-top: 0;
+    padding-bottom: 0;
   }
 
   .videoWrapper {

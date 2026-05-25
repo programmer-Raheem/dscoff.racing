@@ -49,9 +49,8 @@
 }
 
 .footerLinkYellow {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 400;
-  font-style: italic;
   font-size: 32px;
   line-height: 32.4px;
   color: #FFCC2A;
@@ -73,9 +72,8 @@
 }
 
 .footerLinkGrey {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 400;
-  font-style: italic;
   font-size: 32px;
   line-height: 32.4px;
   color: #D2D3D4;
@@ -100,20 +98,19 @@
 .footerConnectSection {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 25px;
 }
 
 .footerDownloadSection {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-top: 10px;
+  gap: 20px;
 }
 
 .footerAccentHeading {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-antarctica);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   color: #F3F3F3;
   text-transform: uppercase;
   margin: 0;
@@ -132,7 +129,8 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  border-radius: 12px; /* little box shape */
+  border-radius: 12px;
+  /* little box shape */
   background-color: transparent;
   transition: all 0.3s ease;
 }
@@ -146,28 +144,39 @@
   width: 26px !important;
   height: 26px !important;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* white icon initially */
+  filter: brightness(0) invert(1);
+  /* white icon initially */
   transition: filter 0.3s ease;
 }
 
 .socialIconLink:hover .socialIcon {
-  filter: brightness(0) invert(0); /* black icon on hover */
+  filter: brightness(0) invert(0);
+  /* black icon on hover */
 }
 
 .storeButtons {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .storeBadge {
-  width: 165px;
-  height: auto;
   object-fit: contain;
   transition: transform 0.3s;
 }
 
 .storeBadge:hover {
   transform: translateY(-2px);
+}
+
+.appleBadge {
+  width: 165px;
+  height: auto;
+}
+
+.googleBadge {
+  height: 55px;
+  width: auto;
 }
 
 .footerBottom {
@@ -246,6 +255,7 @@
     gap: 34px;
   }
 
+
   .footerLogo img {
     height: 40px;
     margin-bottom: 24px;
@@ -258,8 +268,13 @@
     padding-left: 0;
   }
 
-  .footerYellowLinks a:nth-child(1) { order: 2; }
-  .footerYellowLinks a:nth-child(2) { order: 1; }
+  .footerYellowLinks a:nth-child(1) {
+    order: 2;
+  }
+
+  .footerYellowLinks a:nth-child(2) {
+    order: 1;
+  }
 
   .footerLinkYellow,
   .footerLinkGrey {
@@ -300,7 +315,8 @@
   }
 
   .storeBadge {
-    width: 145px;
+    width: 235px !important;
+    height: 70px !important;
   }
 
   .footerBottom {

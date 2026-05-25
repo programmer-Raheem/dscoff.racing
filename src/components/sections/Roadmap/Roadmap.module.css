@@ -23,7 +23,7 @@
 }
 
 .roadmapStoryTitle {
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 900;
   font-size: 36px;
   color: #D2D3D4;
@@ -64,17 +64,16 @@
   width: 350px;
   text-align: right;
   padding-right: 60px;
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 900;
   font-size: 20px;
   color: #FFFFFF;
-  font-style: italic;
   flex-shrink: 0;
 }
 
 .dateHighlight {
   color: #FFCC2A;
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
 }
 
 .timelineDot {
@@ -92,7 +91,7 @@
 .timelineDesc {
   width: auto;
   padding-left: 60px;
-  font-family: 'Race Sport', var(--font-orbitron), sans-serif;
+  font-family: "Race Sport", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #D2D3D4;

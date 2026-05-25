@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import { Images } from "@/utils/images";
+import { Images } from "@/assets/utils/images";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -26,6 +23,18 @@ export default function Hero() {
       {/* Dark overlay */}
       <div className={styles.heroVideoOverlay} />
 
+      {/* Decorative SVG - Right Side */}
+      <div className={styles.heroDecorativeImage}>
+        <img
+          src={Images.heroRight}
+          alt="Decorative"
+          width={384}
+          height={179}
+          className={styles.heroDecorativeImg}
+          loading="lazy"
+        />
+      </div>
+
       <div className={`${styles.container} ${styles.heroContainer}`}>
         <div className={styles.row}>
           <div className={styles.col}>
@@ -33,13 +42,13 @@ export default function Hero() {
               <h2 className={styles.heroWelcome}>WELCOME TO</h2>
 
               <div className={styles.heroLogoBox}>
-                <Image
+                <img
                   src={Images.logoHero}
                   alt="DSCOFF RACING"
                   width={480}
                   height={120}
                   className={styles.heroLogoImg}
-                  priority
+                  loading="eager"
                 />
               </div>
 
@@ -54,19 +63,21 @@ export default function Hero() {
 
               <div className={styles.heroDownloadButtons}>
                 <a href="#" className={styles.downloadBadgeLink}>
-                  <Image
+                  <img
                     src={Images.appleBadge}
                     alt="Download on the App Store"
                     width={180}
                     height={52}
+                    loading="lazy"
                   />
                 </a>
                 <a href="#" className={styles.downloadBadgeLink}>
-                  <Image
+                  <img
                     src={Images.googleBadge}
                     alt="GET IT ON Google Play"
                     width={180}
                     height={52}
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -79,11 +90,12 @@ export default function Hero() {
 
               <div className={styles.scrollArrowBox}>
                 <a href="#details" className={styles.scrollArrow}>
-                  <Image
+                  <img
                     src={Images.arrow}
                     alt="Scroll Down"
                     width={44}
                     height={44}
+                    loading="lazy"
                   />
                 </a>
               </div>

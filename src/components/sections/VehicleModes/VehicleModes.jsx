@@ -1,12 +1,9 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { Images } from "@/utils/images";
-import SectionTopBar from "@/components/reusable/SectionTopBar";
+import { Images } from "@/assets/utils/images";
+import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./VehicleModes.module.css";
 
 const vehicles = [
@@ -31,7 +28,7 @@ export default function VehicleModes() {
 
   return (
     <section className={styles.vehicleModesSection} id="vehicle-modes">
-      <SectionTopBar subtitle="VEHICLE MODES" />
+      <SectionTopBar subtitle="VEHICLE MODES" className={styles.sectionHeading} />
 
       <div className={styles.vehicleModesWrapper}>
         {isMobile ? (
@@ -50,12 +47,17 @@ export default function VehicleModes() {
               <SwiperSlide key={`${v.id}-${index}`} className={styles.vehicleSlide}>
                 <div className={styles.vehicleItemWrapper}>
                   <div className={styles.vehicleModeItem}>
-                    <Image
+                    <img
                       src={v.image}
                       alt={v.alt}
-                      fill
-                      style={{ objectFit: "contain" }}
-                      sizes="50vw"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "contain"
+                      }}
                     />
                   </div>
                   <div className={styles.vehicleModeTextWrapper}>
@@ -72,12 +74,17 @@ export default function VehicleModes() {
             {vehicles.map((v) => (
               <div key={v.id} className={styles.vehicleItemWrapper}>
                 <div className={styles.vehicleModeItem}>
-                  <Image
+                  <img
                     src={v.image}
                     alt={v.alt}
-                    fill
-                    style={{ objectFit: "contain" }}
-                    sizes="(max-width: 1200px) 25vw, 476px"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain"
+                    }}
                   />
                 </div>
                 <div className={styles.vehicleModeTextWrapper}>

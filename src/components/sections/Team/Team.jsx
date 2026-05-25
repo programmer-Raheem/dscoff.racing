@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { teamMembers } from "@/constants/team";
-import SectionTopBar from "@/components/reusable/SectionTopBar";
+import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./Team.module.css";
 
 export default function Team() {
@@ -14,7 +13,7 @@ export default function Team() {
           {teamMembers.map((member) => (
             <div key={member.id} className={styles.teamMember}>
               <div className={styles.teamMemberPhoto}>
-                <Image
+                <img
                   src={member.photoUrl}
                   alt={member.name}
                   width={270}

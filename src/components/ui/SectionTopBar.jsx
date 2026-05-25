@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Images } from "@/utils/images";
+import { Images } from "@/assets/utils/images";
 import styles from "./SectionTopBar.module.css";
 
 export default function SectionTopBar({ subtitle, title, alignment = "left", className = "" }) {
@@ -9,13 +8,12 @@ export default function SectionTopBar({ subtitle, title, alignment = "left", cla
       <div className={`${styles.headerBar} ${styles[alignment]}`}>
         <h2 className={styles.subtitle}>{subtitle}</h2>
         <div className={styles.yellowBgWrapper}>
-          <Image
+          <img
             src={Images.halfNav}
             alt="Slanted background decor"
             width={615}
             height={70}
             className={styles.yellowBg}
-            priority
           />
         </div>
       </div>

@@ -8,6 +8,7 @@ export const Images = {
   arrow: "/images/arrow.svg",
   telegramBg: "/images/tetegram-link.svg",
   telegramBtn: "/images/telegram-button.svg",
+  heroRight: "/images/hero-rigth.svg",
   
   // Game modes
   circuitRacing: "/images/circuit-racing.svg",

@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { Images } from "@/utils/images";
-import SectionTopBar from "@/components/reusable/SectionTopBar";
+import { Images } from "@/assets/utils/images";
+import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./GiveawaysPromo.module.css";
 
 export default function GiveawaysPromo() {
@@ -10,14 +9,12 @@ export default function GiveawaysPromo() {
       <SectionTopBar subtitle="GIVAWAYS" />
 
       <div className={styles.giveawaysPromoContent}>
-        <Image
+        <img
           src={Images.telegramBg}
           alt="DSCOFF Giveaways Promotion"
           width={1440}
           height={600}
           className={styles.giveawaysPromoBg}
-          sizes="100vw"
-          priority
         />
 
         <a
@@ -26,7 +23,7 @@ export default function GiveawaysPromo() {
           rel="noopener noreferrer"
           className={styles.telegramBtnLink}
         >
-          <Image
+          <img
             src={Images.telegramBtn}
             alt="Go to Telegram"
             width={462}

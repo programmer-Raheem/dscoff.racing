@@ -7,15 +7,53 @@
   --secondary-color: #549EFD;
   --bg-color: #FFFFFF;
   --text-color: #8284A0;
+  
+  /* Font Family Variables */
+  --font-racesport: 'Race Sport', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-syncopate: 'Syncopate', sans-serif;
+  --font-antarctica: 'Antarctica Demo', sans-serif;
 }
 
 /* Local Fonts Definition */
 @font-face {
+  font-family: 'Antarctica Demo';
+  src: url('./assets/fonts/AntarcticaDemoItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
   font-family: 'Race Sport';
-  src: url('/fonts/RaceSportRegular.woff2') format('woff2'),
-       url('/fonts/RaceSportRegular.woff') format('woff'),
-       url('/fonts/RaceSport-nR1j0.ttf') format('truetype');
+  src: url('./assets/fonts/RaceSportRegular.woff2') format('woff2'),
+       url('./assets/fonts/RaceSportRegular.woff') format('woff'),
+       url('./assets/fonts/RaceSport-nR1j0.ttf') format('truetype');
   font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: local('Orbitron');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Syncopate';
+  src: local('Syncopate');
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
@@ -44,7 +82,7 @@ html {
 
 /* Reset baseline font families */
 h1, h2, h3, h4, h5, h6, p, span, a, div, li, ul, em, strong {
-  font-family: var(--font-inter), sans-serif;
+  font-family: inherit;
 }
 
 body {

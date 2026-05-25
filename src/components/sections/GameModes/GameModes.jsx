@@ -1,12 +1,9 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { gameModes } from "@/constants/gameModes";
-import SectionTopBar from "@/components/reusable/SectionTopBar";
+import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./GameModes.module.css";
 
 export default function GameModes() {
@@ -46,12 +43,17 @@ export default function GameModes() {
           {gameModes.map((mode) => (
             <SwiperSlide key={mode.id} className={styles.gameModeSlide}>
               <div className={styles.gameModeItem}>
-                <Image
+                <img
                   src={mode.image}
                   alt={mode.alt}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  sizes="(max-width: 768px) 82vw, (max-width: 992px) 50vw, 33vw"
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover"
+                  }}
                 />
                 <div className={styles.gameModeOverlay} />
                 <div className={styles.gameModeTextWrapper}>
