@@ -1,4 +1,4 @@
-import { Images } from "@/assets/utils/images";
+import { Images } from "@/utils/images";
 
 export const gameModes = [
   {

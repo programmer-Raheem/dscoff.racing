@@ -1,5 +1,5 @@
 import React from "react";
-import { Images } from "@/assets/utils/images";
+import { Images } from "@/utils/images";
 import styles from "./SectionTopBar.module.css";
 
 export default function SectionTopBar({ subtitle, title, alignment = "left", className = "" }) {

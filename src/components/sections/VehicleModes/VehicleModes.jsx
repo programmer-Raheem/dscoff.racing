@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import { Images } from "@/assets/utils/images";
+import { Images } from "@/utils/images";
 import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./VehicleModes.module.css";
 

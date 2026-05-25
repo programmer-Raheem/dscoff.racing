@@ -1,5 +1,5 @@
 import React from "react";
-import { Images } from "@/assets/utils/images";
+import { Images } from "@/utils/images";
 import SectionTopBar from "@/components/ui/SectionTopBar";
 import styles from "./GiveawaysPromo.module.css";
 
