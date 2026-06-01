@@ -26,17 +26,17 @@
   position: relative;
   width: 100%;
   height: 545px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 1;
 }
 
 .teamRow {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly; /* changed */
   align-items: center;
-  gap: 140px;
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .teamMember {
@@ -47,8 +47,8 @@
 }
 
 .teamMemberPhoto {
-  width: 270px;
-  height: 270px;
+  width: clamp(200px, 19vw, 270px);
+  height: clamp(200px, 19vw, 270px);
   border-radius: 50%;
   overflow: hidden;
   border: none;
@@ -101,7 +101,6 @@
   .teamSection {
     height: auto;
     padding-bottom: 50px;
-    margin-bottom: 0;
   }
 
   .teamWrapper {
@@ -111,7 +110,9 @@
 
   .teamRow {
     flex-direction: column;
+    justify-content: center;
     gap: 50px;
+    padding: 0 20px;
   }
 
   .teamMemberPhoto {

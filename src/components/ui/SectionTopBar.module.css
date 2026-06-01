@@ -33,12 +33,22 @@
   height: 70px;
   display: flex;
   align-items: center;
+  width: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .yellowBg {
-  height: 70px;
-  width: 615px;
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  /* IMPORTANT FIX for zoom stability */
+  transform: scale(1.01);
+  transform-origin: center;
 }
 
 /* Alignment variations if needed */

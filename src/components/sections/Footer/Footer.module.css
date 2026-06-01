@@ -1,199 +1,184 @@
 .mainFooter {
   border-top: 3px solid #D9D9D9;
   background-color: #0D1B21;
-  padding: 100px 20px 40px 20px;
+  padding: 50px 40px 40px;
   width: 100%;
-  height: 500px;
   box-sizing: border-box;
 }
 
 .footerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
   width: 100%;
-  height: 100%;
-  max-width: 1397px;
-  margin: 0 auto;
 }
+
+/* ==========================================
+   TOP SECTION (Bootstrap-like 3/3/6 columns)
+========================================== */
 
 .footerTopRow {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 100%;
-  flex: 1;
-  min-height: 0;
+  flex-wrap: wrap;
 }
 
 .footerLeftCol {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
+
+.footerMiddleCol {
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin-top: 99px;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
+.footerRightCol {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 109px;
+  padding-left: 52px;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   LEFT COLUMN
+========================================== */
 
 .footerLogo img {
   height: 50px;
   width: auto;
-  padding-left: 20px;
-  margin-bottom: 70px;
-  margin-top: -40px;
+  margin-bottom: 50px;
 }
 
 .footerYellowLinks {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-left: 20px;
+  gap: 12px;
 }
 
 .footerLinkYellow {
   font-family: "Race Sport", sans-serif;
   font-weight: 400;
   font-size: 32px;
-  line-height: 32.4px;
+  line-height: normal;
   color: #FFCC2A;
   text-transform: uppercase;
   text-decoration: none;
-  transition: opacity 0.3s;
 }
 
 .footerLinkYellow:hover {
-  opacity: 0.8;
+  color: #D2D3D4;
 }
+
+/* ==========================================
+   MIDDLE COLUMN
+========================================== */
 
 .footerMiddleCol {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 80px;
-  margin-right: 230px;
+  gap: 12px;
 }
 
 .footerLinkGrey {
   font-family: "Race Sport", sans-serif;
   font-weight: 400;
   font-size: 32px;
-  line-height: 32.4px;
+  line-height: normal;
   color: #D2D3D4;
   text-transform: uppercase;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .footerLinkGrey:hover {
   color: #FFCC2A;
 }
 
-.footerRightCol {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 83px;
-  position: relative;
-  left: -200px;
-}
+/* ==========================================
+   RIGHT COLUMN
+========================================== */
 
 .footerConnectSection {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.footerDownloadSection {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  margin-bottom: 32px;
 }
 
 .footerAccentHeading {
   font-family: var(--font-antarctica);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 21px;
+  font-style: italic;
   color: #F3F3F3;
-  text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 16px;
 }
 
 .socialIconsWrapper {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
 }
 
 .socialIconLink {
-  text-decoration: none;
-  display: inline-flex;
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  /* little box shape */
-  background-color: transparent;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .socialIconLink:hover {
   background-color: #FFCC2A;
-  transform: translateY(-2px);
 }
 
 .socialIcon {
   width: 26px !important;
   height: 26px !important;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  /* white icon initially */
-  transition: filter 0.3s ease;
 }
 
-.socialIconLink:hover .socialIcon {
-  filter: brightness(0) invert(0);
-  /* black icon on hover */
+.footerDownloadSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .storeButtons {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
-}
-
-.storeBadge {
-  object-fit: contain;
-  transition: transform 0.3s;
-}
-
-.storeBadge:hover {
-  transform: translateY(-2px);
 }
 
 .appleBadge {
-  width: 165px;
-  height: auto;
+  width: 164px;
+  height: 55px;
+  object-fit: contain;
 }
 
 .googleBadge {
+  width: 185px;
   height: 55px;
-  width: auto;
+  object-fit: contain;
 }
 
+/* ==========================================
+   BOTTOM SECTION
+========================================== */
+
 .footerBottom {
-  border-top: none;
-  margin-top: 130px;
-  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  flex-shrink: 0;
+  margin-top: 40px;
+  padding-top: 24px;
 }
 
 .footerBottomLinks {
   display: flex;
-  gap: 30px;
-  padding-left: 20px;
+  gap: 40px;
 }
 
 .footerBottomLink {
@@ -201,7 +186,6 @@
   font-size: 14px;
   color: #D2D3D4;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .footerBottomLink:hover {
@@ -212,130 +196,90 @@
   font-family: var(--font-inter), sans-serif;
   font-size: 14px;
   color: #D2D3D4;
-  padding-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+  .footerLeftCol,
+  .footerMiddleCol {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footerRightCol {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .footerMiddleCol {
+    margin-top: 40px;
+    padding-left: 30px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
   .mainFooter {
-    padding: 48px 20px 40px;
-    height: auto;
-    min-height: 580px;
-  }
-
-  .footerContainer {
-    justify-content: flex-start;
-    gap: 0;
-    text-align: left;
-  }
-
-  .footerTopRow {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 36px;
-    text-align: left;
-    width: 100%;
+    padding: 34px 20px 24px;
   }
 
   .footerLeftCol,
   .footerMiddleCol,
   .footerRightCol {
-    align-items: flex-start;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
     margin-top: 0;
-    width: 100%;
   }
 
-  .footerMiddleCol {
-    margin-right: 0;
-    gap: 18px;
+  .footerTopRow {
+    gap: 36px;
   }
-
-  .footerRightCol {
-    position: static !important;
-    left: auto !important;
-    gap: 34px;
-  }
-
 
   .footerLogo img {
-    height: 40px;
     margin-bottom: 24px;
-    margin-top: 0;
-    padding-left: 0;
-  }
-
-  .footerYellowLinks {
-    gap: 18px;
-    padding-left: 0;
-  }
-
-  .footerYellowLinks a:nth-child(1) {
-    order: 2;
-  }
-
-  .footerYellowLinks a:nth-child(2) {
-    order: 1;
   }
 
   .footerLinkYellow,
   .footerLinkGrey {
-    font-size: 28px;
-    line-height: 28.35px;
-  }
-
-  .footerConnectSection {
-    gap: 22px;
+    font-size: 24px;
   }
 
   .footerAccentHeading {
-    font-size: 16px;
-  }
-
-  .socialIconsWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .socialIcon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .footerDownloadSection {
-    margin-top: 0;
-    gap: 16px;
+    font-size: 20px;
   }
 
   .storeButtons {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
   }
 
-  .storeBadge {
-    width: 235px !important;
-    height: 70px !important;
+  .appleBadge,
+  .googleBadge {
+    width: 175px;
+    height: auto;
   }
 
   .footerBottom {
-    display: flex;
     flex-direction: column;
-    margin-top: 60px;
-    gap: 15px;
-    align-items: center;
+    gap: 10px;
     text-align: center;
-    width: 100%;
   }
 
   .footerBottomLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 15px;
-    padding-left: 0;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .footerBottomLink {
@@ -343,9 +287,6 @@
   }
 
   .footerCopyright {
-    padding-right: 0;
-    text-align: center;
-    width: 100%;
-    margin-top: 5px;
+    font-size: 12px;
   }
 }

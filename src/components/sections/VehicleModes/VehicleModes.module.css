@@ -32,7 +32,7 @@
 }
 
 .vehicleItemWrapper {
-  width: 476.34px;
+  width: clamp(300px, 33vw, 476.34px);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
 }
 
 .vehicleItemWrapper:not(:first-child) {
-  margin-left: -215px;
+  margin-left: clamp(-150px, -15vw, -215px);
 }
 
 .vehicleItemWrapper:nth-child(1) {

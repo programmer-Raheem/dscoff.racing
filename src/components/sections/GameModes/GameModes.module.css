@@ -63,7 +63,7 @@
   transform: skewX(-38deg);
   overflow: hidden;
   cursor: pointer;
-  background-color: #FFCC2A;
+  background-color: transparent;
   z-index: 1;
   transition: z-index 0s;
 }

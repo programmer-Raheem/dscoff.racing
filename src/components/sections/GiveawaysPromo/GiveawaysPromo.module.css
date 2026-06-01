@@ -1,6 +1,6 @@
 .giveawaysPromoSection {
   position: relative;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -19,31 +19,43 @@
   display: block;
 }
 
+/* ✅ FIXED BUTTON (stable like GameBanner) */
 .telegramBtnLink {
   position: absolute;
+  bottom: 50px;
+  right: 110px;
+
   width: 32%;
   max-width: 462px;
-  height: auto;
   aspect-ratio: 462 / 95;
-  top: 70.2%;
-  left: 57.6%;
+
   z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   transition:
     transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     filter 0.3s ease;
+
+  transform-origin: center;
 }
 
 .telegramBtnImg {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: contain;
 }
 
+/* hover effect */
 .telegramBtnLink:hover {
   transform: scale(1.03);
   filter: drop-shadow(0 10px 20px rgba(255, 204, 42, 0.4));
 }
 
+/* ================= MOBILE ================= */
 @media screen and (max-width: 768px) {
   .giveawaysPromoSection {
     height: auto;
@@ -71,12 +83,12 @@
     position: absolute;
     left: 50%;
     right: auto;
-    top: auto;
     bottom: 40px;
+
     width: 75%;
     max-width: 280px;
+
     transform: translateX(-50%);
-    aspect-ratio: auto;
   }
 
   .telegramBtnLink:hover {
@@ -84,13 +96,10 @@
   }
 }
 
+/* ================= SMALL MOBILE ================= */
 @media screen and (max-width: 480px) {
   .giveawaysPromoContent {
     min-height: 400px;
     background-size: cover;
-  }
-
-  .telegramBtnImg {
-    margin-bottom: 50px;
   }
 }
